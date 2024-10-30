@@ -2,14 +2,14 @@
   "name": "Frame-Translate-Plugin",
   "id": "1433393172460349061",
   "api": "1.0.0",
-  "main": "code.js",
+  "main": "src/code.js",
   "capabilities": [],
   "enableProposedApi": false,
   "documentAccess": "dynamic-page",
   "editorType": [
     "figma"
   ],
-  "ui": "ui.html",
+  "ui": "src/ui.html",
   "networkAccess": {
     "allowedDomains": [
       "none"

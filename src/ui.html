@@ -1,0 +1,55 @@
+<!-- <h2>...</h2>
+<p>Count: <input id="count" type="number" value="5"></p>
+<button id="create">Create</button>
+<button id="cancel">Cancel</button>
+<script>
+
+document.getElementById('create').onclick = () => {
+  const textbox = document.getElementById('count');
+  const count = parseInt(textbox.value, 10);
+  parent.postMessage({ pluginMessage: { type: 'create-shapes', count } }, '*')
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+
+</script> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Figma Translation Plugin</title>
+</head>
+
+<body>
+  <div class="popup">
+    <h1>Translate Text</h1>
+    <label for="frame-select">Select Frame:</label>
+    <select id="frame-select">
+  
+    </select>
+
+    <label for="language-select">Select Language:</label>
+    <select id="language-select">
+      <option value="en">English</option>
+      <option value="es">Spanish</option>
+      <option value="fr">French</option>
+      <option value="de">German</option>
+
+    </select>
+
+    <button id="translate-button">Translate</button>
+    <button id="cancel-button">Cancel</button>
+
+    <div id="translation-result" class="result"></div>
+  </div>
+
+</body>
+
+</html>
